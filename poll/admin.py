@@ -7,6 +7,7 @@ class QuestionAdmin(admin.ModelAdmin):
 		'title',
 		'pub_date',
 		'end_date',
+		'active',
 	)
 
 
