@@ -16,7 +16,6 @@ class ChoiceAdmin(admin.ModelAdmin):
 		'title',
 		'question',
 		'lock_other',
-		'on_text'
 	)
 	list_filter = ('question',)
 
