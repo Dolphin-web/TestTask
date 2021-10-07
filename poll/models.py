@@ -14,7 +14,8 @@ class Question(models.Model):
 	title = models.CharField(max_length=4096)
 	pub_date = models.DateTimeField(auto_now_add=True)
 	end_date = models.DateTimeField()
-	active = models.BooleanField(default=True)
+	active = models.BooleanField(default=True, editable = False)
+
 	def save(self, *args, **kw):
 		if self.end_date < timezone.now():
 			self.active = False
