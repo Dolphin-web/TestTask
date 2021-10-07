@@ -1,0 +1,18 @@
+Среда:
+Django==2.2.10
+djangorestframework==3.12.4
+
+После настройки среды выполнить следующие команды:
+
+Команда для создания миграций приложения для базы данных
+python manage.py makemigrations
+python manage.py migrate
+
+Создание суперпользователя
+python manage.py createsuperuser
+
+Запуск приложения
+python manage.py runserver
+
+Вход в Админку
+127.0.0.1:8000/admin
