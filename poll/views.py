@@ -21,7 +21,7 @@ class GetAnswers(APIView):
 
 class PostAnswers(GenericAPIView):
 	serializer_class = AnswerSerializer
-	def get(self, request, QuestionsId, UserId):
+	def get(self, request, ChoiceId, QuestionsId, UserId):
 		x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
 		if x_forwarded_for:
 			ip = x_forwarded_for.split(',')[0]
